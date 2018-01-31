@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e1b975aa-04c1-4826-ad8e-07ef0637263b" created="2.1.0" activeEnvironment="Default" name="TokenGenerator" resourceRoot="" updated="2.2.0 2017-11-28T12:17:25Z" abortOnError="false" runType="SEQUENTIAL" soapui-version="5.4.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="89a37c73-0ca4-42d9-81ee-537ae764a542" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dc1testrmapp03.prod.tangoe.com:8761" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dc1testrmapp03.prod.tangoe.com:8761</con:endpoint></con:endpoints><con:resource name="Authenticate" path="/api/authenticate" id="9add601c-1434-4672-afac-099495236192"><con:settings/><con:parameters/><con:method name="Authenticate" id="a485f458-69f3-4395-96f2-c5a4e477e9f8" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:aut="http://dc1testrmapp03.prod.tangoe.com/api/authenticate">aut:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:aut="http://dc1testrmapp03.prod.tangoe.com/api/authenticate">aut:Fault</con:element></con:representation><con:request name="Request 1" id="ef880b5f-a0f7-48cf-81ad-52ca4030bed3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dc1testrmapp03.prod.tangoe.com:8761</con:endpoint><con:request>{
+  "password": "admin",
+  "rememberMe": true,
+  "username": "admin"
+}
+</con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="608eb949-2fa1-4a67-8d64-bd93d27bc8fd" name="TS_Token"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="b3805ac0-7fd7-430d-9463-53921b8ee778" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC_Token" searchProperties="true" timeout="0" maxResults="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="GenerateToken" id="1ada66b8-e3e2-457a-8fe8-20c1f09ab3ea"><con:settings/><con:config service="http://dc1testrmapp03.prod.tangoe.com:8761" resourcePath="/api/authenticate" methodName="Authenticate" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GenerateToken" id="ef880b5f-a0f7-48cf-81ad-52ca4030bed3" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dc1testrmapp03.prod.tangoe.com:4070</con:endpoint><con:request>{
+  "password": "admin",
+  "rememberMe": true,
+  "username": "admin"
+}
+</con:request><con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/authenticate</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="e8a8a75f-71a9-475c-9278-e18942115699" name="Valid HTTP Status Codes"><con:settings/><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="PutTokenIntoFile" id="52cb81a6-b2cf-4d05-8668-159586f578fb"><con:settings/><con:config><script>import groovy.json.JsonSlurper 
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+def testCase = context.testCase; 
+def testStep = testCase.getTestStepByName("GenerateToken") 
+
+
+// Get JSON response 
+def response = testStep.testRequest.messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+String token = json.id_token
+
+
+def projectPath = groovyUtils.projectPath //gets the path of the project root
+
+// File that will contain the TOKEN
+File outFile = new File(projectPath + "\\tokenGenerated.txt")
+
+def logFile = outFile
+
+logFile.delete()
+
+logFile.append("Token=" + token)
+
+log.info " ** TOKEN WAS SUCCESSFULLY GENERATED ** "
+</script></con:config></con:testStep><con:properties><con:property><con:name>TOKEN_URL</con:name><con:value>http://dc1testrmapp03.prod.tangoe.com:4070</con:value></con:property></con:properties><con:reportParameters/><con:breakPoints><con:testStepId>52cb81a6-b2cf-4d05-8668-159586f578fb</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:authRepository/><con:tags/></con:soapui-project>
