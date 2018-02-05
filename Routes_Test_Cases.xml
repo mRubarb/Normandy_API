@@ -3359,13 +3359,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="9524a457-fefc-4980-a1a5-79a65d41e781" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="b0db7044-0b96-4dbb-86da-b9d6070210c5" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   tenant assignment count: 1    deployment assignment count: 1    route assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   tenant assignment count: 1    deployment assignment count: 1    route assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3410,13 +3408,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="482748aa-643c-4023-b294-3a1d7432d6fc" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="128fb78a-7831-469e-ad77-bdc670a058c6" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete deployment ${#TestCase#deploymentKey} because of the following assignments:   tenant assignment count: 1    route assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete deployment ${#TestCase#deploymentKey} because of the following assignments:   tenant assignment count: 1    route assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3461,13 +3457,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="a27d2790-9840-4594-975f-0038ef5b4d25" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="beb25dc2-ea42-48e0-92d8-ac894ba854c8" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete tenant ${#TestCase#tenantKey} because of the following assignments:   application assignment count: 1    deployment assignment count: 1    route assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete tenant ${#TestCase#tenantKey} because of the following assignments:   application assignment count: 1    deployment assignment count: 1    route assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3512,13 +3506,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="90baf246-8bf3-44fb-aaa8-89725b42197a" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="ff69942f-e701-4ca8-ad93-a5e7d9ad9c04" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot unassign application from tenant because there are 1 route(s) assigned to tenant ${#TestCase#tenantKey} and application ${#TestCase#applicationKey}</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot unassign application from tenant because there are 1 route(s) assigned to tenant ${#TestCase#tenantKey} and application ${#TestCase#applicationKey}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3526,6 +3518,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="applicationKey" value="${#TestCase#applicationKey}"/>
@@ -3564,13 +3557,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="68b3e8df-d075-44d3-a799-0d4aa26d5b66" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="fb6299d8-bba7-4ba4-8c65-69b006477653" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot unassign deployment from tenant because there are 1 route(s) assigned to tenant ${#TestCase#tenantKey} and deployment ${#TestCase#deploymentKey}</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot unassign deployment from tenant because there are 1 route(s) assigned to tenant ${#TestCase#tenantKey} and deployment ${#TestCase#deploymentKey}</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3650,13 +3641,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="46023312-3639-45ad-a73f-8c29ee9051b4" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="80e7cbe2-8a13-4140-8716-1e6af664343e" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   tenant assignment count: 1    deployment assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   tenant assignment count: 1    deployment assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3701,13 +3690,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="2ba6e4e5-77ca-41b7-9c34-1b4ebe091e8b" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="005af6d8-9fb6-4e89-aa51-304f8eb34328" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete deployment ${#TestCase#deploymentKey} because of the following assignments:   tenant assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete deployment ${#TestCase#deploymentKey} because of the following assignments:   tenant assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3743,13 +3730,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <codes>400</codes>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="f44bb9bb-b9fa-467e-8c98-36ad03b8d159" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="db9b335e-a928-4f68-b752-6f147362cbd7" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete tenant ${#TestCase#tenantKey} because of the following assignments:   application assignment count: 1    deployment assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete tenant ${#TestCase#tenantKey} because of the following assignments:   application assignment count: 1    deployment assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3790,6 +3775,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="applicationKey" value="${#TestCase#applicationKey}"/>
@@ -3824,6 +3810,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="deploymentKey" value="${#TestCase#deploymentKey}"/>
@@ -3858,6 +3845,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#tenantKey}"/>
@@ -3894,13 +3882,11 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
                 <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
-            <con:assertion type="JsonPath Match" id="7e20be9d-9c65-4c27-a0b9-f643b7a96b39" name="Match content of [message]">
+            <con:assertion type="Simple Contains" id="d88fe304-c027-463a-8629-3a84120b34af" name="Contains">
               <con:configuration>
-                <path>$['message']</path>
-                <content>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   deployment assignment count: 1</content>
-                <allowWildcards>false</allowWildcards>
-                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
-                <ignoreComments>false</ignoreComments>
+                <token>Cannot delete application ${#TestCase#applicationKey} because of the following assignments:   deployment assignment count: 1</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -3941,6 +3927,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#deploymentKey}"/>
@@ -3973,6 +3960,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#applicationKey}"/>
