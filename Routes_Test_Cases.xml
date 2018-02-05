@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="73af64d9-0994-43cb-98f5-d8c4701d6bc4" created="2.1.0" activeEnvironment="Default environment" name="Routes Test Cases" updated="2.2.0 20171026-0943" lastOpened="2017-12-15T07:51:45.375-03:00" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="73af64d9-0994-43cb-98f5-d8c4701d6bc4" created="2.1.0" activeEnvironment="Default" name="Routes Test Cases" updated="2.2.0 20171026-0943" lastOpened="2017-12-15T07:51:45.375-03:00" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="a5439a2e-758c-40e8-b31e-d6bea53b26ee" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Applications" path="/platformservice/api/v1/applications" id="ad080c53-7b7e-4db7-9e13-7646583ab74b">
       <con:settings/>
       <con:parameters>
@@ -128,8 +128,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="15a8f532-5a3c-4421-b78d-177c803e8368" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications/{key} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Key" path="/platformservice/api/v1/applications/{key}" id="4f27c66f-8133-4eec-b8dc-9ebd11af57dc">
       <con:settings/>
       <con:parameters>
@@ -253,8 +253,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="84e78ef0-57f2-4e47-939b-348deae469f6" wadlVersion="http://wadl.dev.java.net/2009/02" name="/deployments POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Deployments" path="/platformservice/api/v1/deployments" id="a737dab9-e9aa-4061-aa58-795694ce7b37">
       <con:settings/>
       <con:parameters>
@@ -433,8 +433,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="9d6b66b6-4f80-4c7b-89c5-abfb36d5a0ef" wadlVersion="http://wadl.dev.java.net/2009/02" name="/deployments/{key} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Key" path="/platformservice/api/v1/deployments/{key}" id="3cfb9dca-3ad5-4c9f-8cba-9c6b9c405c26">
       <con:settings/>
       <con:parameters>
@@ -594,8 +594,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="21665353-c7a7-4e9e-9cd1-645bc2cd0ee8" wadlVersion="http://wadl.dev.java.net/2009/02" name="/routes GET" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Routes" path="/platformservice/api/v1/routes" id="015dc7c6-6253-43ec-a148-370c98b3032c">
@@ -762,8 +762,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="d10a6fc1-3496-4f8e-a9f5-ca455e416e51" wadlVersion="http://wadl.dev.java.net/2009/02" name="/routes POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Routes" path="/platformservice/api/v1/routes" id="7f2106eb-717d-4318-b2cf-cfbf363d02ce">
@@ -872,8 +872,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="b3f4f858-ef23-43ed-a0e5-d0b8ca25e770" wadlVersion="http://wadl.dev.java.net/2009/02" name="/routes/{key} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Key" path="/platformservice/api/v1/routes/{key}" id="5dffefcd-0667-49e1-855e-f447391e31a8">
@@ -1047,8 +1047,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="44eb5bbe-260e-4d81-976f-9c08af58b865" wadlVersion="http://wadl.dev.java.net/2009/02" name="/routes/{key} GET" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Key" path="/platformservice/api/v1/routes/{key}" id="43ac3ce1-0786-4148-9df6-b0348914cc42">
@@ -1134,8 +1134,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="4331c897-8a3e-4602-9074-940683c2fd65" wadlVersion="http://wadl.dev.java.net/2009/02" name="/routes/{key} PUT" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Key" path="/platformservice/api/v1/routes/{key}" id="23a461ce-4686-4d08-91e0-b053b4fc89f5">
@@ -1393,8 +1393,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="dcc4d8da-10b4-4e01-9200-98571a13a05a" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants GET" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Tenants" path="/platformservice/api/v1/tenants" id="842fd1b9-4d00-44d1-a46f-cf5b1c7279ee">
       <con:settings/>
       <con:parameters>
@@ -1513,8 +1513,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="0c791649-f64a-4704-bede-2db8d1ed4d9a" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="Tenants" path="/platformservice/api/v1/tenants" id="4802193d-8a3c-4926-8715-08795cbe2930">
       <con:settings/>
       <con:parameters>
@@ -1715,8 +1715,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="9d7ffdeb-af25-41a0-b787-30c7f6d597a8" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants/{key} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="Key" path="/platformservice/api/v1/tenants/{key}" id="d1735019-df86-4e0b-9cbc-afaaa4fff9c3">
@@ -1902,8 +1902,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="ace6a764-4445-4ed6-b7d5-107f607e5bbe" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants/{key}/applications/{applicationKey} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="ApplicationKey" path="/platformservice/api/v1/tenants/{key}/applications/{applicationKey}" id="f2e71000-5c89-4478-8751-011823d4aa85">
       <con:settings/>
       <con:parameters>
@@ -2055,8 +2055,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="f4504863-ca77-4d4f-b244-009fe0b2ebda" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants/{key}/applications/{applicationKey} PUT" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
       <con:endpoint>http://dc2devrmapp44.prod.tangoe.com:8055</con:endpoint>
     </con:endpoints>
     <con:resource name="(applicationKey)" path="/platformservice/api/v1/tenants/{key}/applications/{applicationKey}" id="3b8876c6-4302-46ff-a85e-766bbf6420e3">
@@ -2218,8 +2218,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="0240edaa-3069-4475-9e73-5c3172fb24db" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants/{key}/deployments/{deploymentKey} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="DeploymentKey" path="/platformservice/api/v1/tenants/{key}/deployments/{deploymentKey}" id="c6912e36-46cf-44a8-9142-7e9e07ed5204">
       <con:settings/>
       <con:parameters>
@@ -2395,8 +2395,8 @@
   </con:interface>
   <con:interface xsi:type="con:RestService" id="ab4f5637-8b81-4abd-b699-d77cc813dc7d" wadlVersion="http://wadl.dev.java.net/2009/02" name="/tenants/{key}/deployments/{deploymentKey} PUT" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
-    
-    <con:definitionCache type="TEXT" rootPart=""/><con:endpoints/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
     <con:resource name="DeploymentKey" path="/platformservice/api/v1/tenants/{key}/deployments/{deploymentKey}" id="0e64a5b5-49c8-41a0-aa09-fa6feb426936">
       <con:settings/>
       <con:parameters>
@@ -2976,7 +2976,7 @@ assert(routeListed == true)</script>
         </con:property>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -3058,12 +3058,12 @@ static void setupTestSuiteVariables(inputLine, log, testRunner)
 	if (inputLine.contains("Token"))
 	{  
 		testRunner.testCase.setPropertyValue("Token",strArray[1])
-		log.info "  Token: " + testRunner.testCase.getPropertyValue("Token")		
+		// log.info "  Token: " + testRunner.testCase.getPropertyValue("Token")		
 	
 	} else if (inputLine.contains("URL"))
 	{
 		testRunner.testCase.setPropertyValue("URL",strArray[1])
-		log.info "  Hostname URL: " + testRunner.testCase.getPropertyValue("URL")	
+		// log.info "  Hostname URL: " + testRunner.testCase.getPropertyValue("URL")	
 	}
 	
 }</script>
@@ -3270,6 +3270,7 @@ static void setupTestSuiteVariables(inputLine, log, testRunner)
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <entry key="Authorization" value="Bearer ${#TestCase#Token}" xmlns="http://eviware.com/soapui/config"/>
             </con:parameters>
@@ -3318,6 +3319,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#routeKey}"/>
@@ -3371,6 +3373,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#applicationKey}"/>
@@ -3421,6 +3424,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#deploymentKey}"/>
@@ -3471,6 +3475,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#tenantKey}"/>
@@ -3573,6 +3578,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="deploymentKey" value="${#TestCase#deploymentKey}"/>
@@ -3607,6 +3613,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#routeKey}"/>
@@ -3657,6 +3664,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#applicationKey}"/>
@@ -3707,6 +3715,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#deploymentKey}"/>
@@ -3748,6 +3757,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#tenantKey}"/>
@@ -3898,6 +3908,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="key" value="${#TestCase#applicationKey}"/>
@@ -4008,7 +4019,7 @@ testRunner.testCase.setPropertyValue("routeKey", routeKey)</script>
         </con:property>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -5757,7 +5768,7 @@ testRunner.testCase.setPropertyValue("routeKeyBody", "\"" + json.key + "\"")</sc
         </con:property>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -6004,7 +6015,23 @@ static void setupTestSuiteVariables(inputLine, log, testRunner)
         <con:settings/>
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row></con:configuration>
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+            </con:configuration>
           </con:dataSource>
           <con:shared>false</con:shared>
           <con:restartShared>false</con:restartShared>
@@ -6160,7 +6187,7 @@ void verifyOrderSortAscending(json, sortDirection, sortBy){
       <con:properties>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -6817,7 +6844,7 @@ testRunner.testCase.setPropertyValue("routeKeyBody", "\"" + routeKey + "\"")</sc
         </con:property>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -7032,7 +7059,7 @@ testRunner.testCase.setPropertyValue("tenantKey", key)</script>
         </con:property>
         <con:property>
           <con:name>Token</con:name>
-          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUxOTIzNDY5MX0.ON3F380hemEMb37wbluFjARvw6jt0HuiojqXfxhxBLDkX4Q3TXAqPiF-qM0_Ey5LKqBtK1iGiVqpo2BDk-TUUw</con:value>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
         </con:property>
         <con:property>
           <con:name>URL</con:name>
@@ -7150,7 +7177,8 @@ static void setupTestSuiteVariables(inputLine, log, testRunner)
       </con:testStep>
       <con:testStep type="groovy" name="GetTotalCountRoutes" id="3cd86a98-4d38-4002-ae77-46c19fb3130d">
         <con:settings/>
-        <con:config><script>import groovy.json.JsonSlurper 
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
 def testCase = context.testCase; 
 def testStep = testCase.getTestStepByName("GetRoutes") 
@@ -7162,14 +7190,20 @@ def json = slurper.parseText response
 
 testRunner.testCase.setPropertyValue("totalCountRoutes", Integer.toString(json.metadata.totalCount))
 
-log.info "  Total Count Routes: " + testRunner.testCase.getPropertyValue("totalCountRoutes")
-</script></con:config>
+log.info "  Total Count Routes: " + testRunner.testCase.getPropertyValue("totalCountRoutes")</script>
+        </con:config>
       </con:testStep>
       <con:testStep type="datasource" name="DataSource_PageSize" id="58e5c11e-1945-4ceb-8850-5c0681183af9">
         <con:settings/>
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row><row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">10&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row><row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">20&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row><row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">50&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row></con:configuration>
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">10&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">20&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">50&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+            </con:configuration>
           </con:dataSource>
           <con:shared>true</con:shared>
           <con:restartShared>true</con:restartShared>
@@ -7179,7 +7213,8 @@ log.info "  Total Count Routes: " + testRunner.testCase.getPropertyValue("totalC
       </con:testStep>
       <con:testStep type="groovy" name="CalculateNumberOfPages" id="d3d8f3ba-1ac2-4e46-baa4-72764d43beff">
         <con:settings/>
-        <con:config><script>def testCase = context.testCase; 
+        <con:config>
+          <script>def testCase = context.testCase; 
 
 def dataSource = testCase.getTestStepByName("DataSource_PageSize") 
 
@@ -7198,21 +7233,44 @@ testRunner.testCase.setPropertyValue("currentPageNumber", "0")
 
 //log.info "  Total Count Routes: " + totalCountRoutes
 log.info "  Page Size: " + pageSize
-log.info "  Pages Amount: " + pagesAmount</script></con:config>
+log.info "  Pages Amount: " + pagesAmount</script>
+        </con:config>
       </con:testStep>
       <con:testStep type="groovy" name="GetCurrentPageNumber" id="680f8f71-e506-41d3-8a79-24a0c668a2eb">
         <con:settings/>
-        <con:config><script>int currentPageNumber = Integer.parseInt(testRunner.testCase.getPropertyValue("currentPageNumber")) + 1
+        <con:config>
+          <script>int currentPageNumber = Integer.parseInt(testRunner.testCase.getPropertyValue("currentPageNumber")) + 1
 
 testRunner.testCase.setPropertyValue("currentPageNumber", Integer.toString(currentPageNumber))
 
-log.info "  Current Page Number: " + currentPageNumber</script></con:config>
+log.info "  Current Page Number: " + currentPageNumber</script>
+        </con:config>
       </con:testStep>
       <con:testStep type="datasource" name="DataSource_SortCriteria" id="c66b2770-ce5c-46e6-a729-a4e5a00e7481">
         <con:settings/>
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Grid">
-            <con:configuration><check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row><row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row></con:configuration>
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">TENANT_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">DEPLOYMENT_VERSION</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">APPLICATION_NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">QUALIFIER</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+            </con:configuration>
           </con:dataSource>
           <con:shared>false</con:shared>
           <con:restartShared>false</con:restartShared>
@@ -7244,15 +7302,15 @@ log.info "  Current Page Number: " + currentPageNumber</script></con:config>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:jmsPropertyConfig/>
             <con:parameters>
-  <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
-  <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
-  <con:entry key="includeApplication" value="true"/>
-  <con:entry key="pageSize" value="${#TestCase#totalCountRoutes}"/>
-  <con:entry key="includeTenant" value="true"/>
-  <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
-  <con:entry key="page" value="1"/>
-  <con:entry key="includeDeployment" value="true"/>
-</con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
+              <con:entry key="includeApplication" value="true"/>
+              <con:entry key="pageSize" value="${#TestCase#totalCountRoutes}"/>
+              <con:entry key="includeTenant" value="true"/>
+              <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
+              <con:entry key="page" value="1"/>
+              <con:entry key="includeDeployment" value="true"/>
+            </con:parameters>
             <con:parameterOrder>
               <con:entry>applicationKey</con:entry>
               <con:entry>tenantKey</con:entry>
@@ -7274,7 +7332,8 @@ log.info "  Current Page Number: " + currentPageNumber</script></con:config>
       </con:testStep>
       <con:testStep type="groovy" name="PutAllRoutesIntoList" id="4323f9b6-f359-4f53-a24b-ed13a63b7465">
         <con:settings/>
-        <con:config><script>import groovy.json.JsonSlurper 
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
 def testCase = context.testCase; 
 def testStep = testCase.getTestStepByName("GetAllRoutesSorted") 
@@ -7352,7 +7411,8 @@ public class RouteObject {
 		log.info "Enabled: " + enabled
 		
 	}
-}</script></con:config>
+}</script>
+        </con:config>
       </con:testStep>
       <con:testStep type="restrequest" name="SortRoutes" id="8ca6c1e7-a5d9-42bb-8040-35b349bf313b">
         <con:settings/>
@@ -7376,15 +7436,15 @@ public class RouteObject {
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
             <con:parameters>
-  <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
-  <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
-  <con:entry key="includeApplication" value="true"/>
-  <con:entry key="includeTenant" value="true"/>
-  <con:entry key="pageSize" value="${DataSource_PageSize#pageSize}"/>
-  <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
-  <con:entry key="page" value="${#TestCase#currentPageNumber}"/>
-  <con:entry key="includeDeployment" value="true"/>
-</con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
+              <con:entry key="includeApplication" value="true"/>
+              <con:entry key="includeTenant" value="true"/>
+              <con:entry key="pageSize" value="${DataSource_PageSize#pageSize}"/>
+              <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
+              <con:entry key="page" value="${#TestCase#currentPageNumber}"/>
+              <con:entry key="includeDeployment" value="true"/>
+            </con:parameters>
             <con:parameterOrder>
               <con:entry>applicationKey</con:entry>
               <con:entry>tenantKey</con:entry>
@@ -7406,7 +7466,8 @@ public class RouteObject {
       </con:testStep>
       <con:testStep type="groovy" name="VerifyRoutesSorted" id="62f3ed11-df53-4426-9391-b4bffa3155e8">
         <con:settings/>
-        <con:config><script>import groovy.json.JsonSlurper 
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
 def testCase = context.testCase; 
 def testStep = testCase.getTestStepByName("SortRoutes") 
@@ -7608,12 +7669,15 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 	} 
 		
 	index++
-}
-</script></con:config>
+}</script>
+        </con:config>
       </con:testStep>
       <con:testStep type="datasourceloop" name="DataSource Loop Sort_Criteria" id="f40512a3-0e30-494d-9a2b-6743ad7ab437">
         <con:settings/>
-        <con:config><dataSourceStep>DataSource_SortCriteria</dataSourceStep><targetStep>GetAllRoutesSorted</targetStep></con:config>
+        <con:config>
+          <dataSourceStep>DataSource_SortCriteria</dataSourceStep>
+          <targetStep>GetAllRoutesSorted</targetStep>
+        </con:config>
       </con:testStep>
       <con:testStep type="goto" name="TotalPages = CalculatedAmountPages" id="38a73054-b71b-469a-ad50-afb78adf71e4">
         <con:settings/>
@@ -7722,7 +7786,12 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
         <con:status>NONE</con:status>
         <con:properties/>
       </con:breakPoints>
-    <con:breakPoints><con:testStepId>4323f9b6-f359-4f53-a24b-ed13a63b7465</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
+      <con:breakPoints>
+        <con:testStepId>4323f9b6-f359-4f53-a24b-ed13a63b7465</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
     <con:properties/>
     <con:reportParameters/>
   </con:testSuite>
