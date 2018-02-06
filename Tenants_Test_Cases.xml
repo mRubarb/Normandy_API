@@ -12045,7 +12045,8 @@ static void setupTestSuiteVariables(inputLine, log, testRunner)
         <con:properties/>
       </con:breakPoints>
     </con:testCase>
-    <con:testCase id="499d856c-6179-4b40-98c6-88b547f2f836" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC###_VerifySortingAndPagingTenantsList" searchProperties="true">
+    <con:testCase id="499d856c-6179-4b40-98c6-88b547f2f836" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1057_VerifySortingAndPagingTenantsList" searchProperties="true">
+      <con:description>T-1057:Tenants sorting with different size of pages</con:description>
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
       <con:testStep type="groovy" name="SetupVariables" id="cf2c7755-58aa-4bf6-8651-61e6be9252b9">

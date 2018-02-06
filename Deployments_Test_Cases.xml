@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="1b27d56d-2795-4155-9c93-d8151f420cfb" activeEnvironment="Default environment" name="Deployments Test Cases" lastOpened="2017-12-15T15:25:21.851-03:00" soapui-version="5.4.0" updated="2.2.0 2017-11-28T12:17:25Z" resourceRoot="" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="1b27d56d-2795-4155-9c93-d8151f420cfb" activeEnvironment="Default" name="Deployments Test Cases" lastOpened="2017-12-15T15:25:21.851-03:00" soapui-version="5.4.0" updated="2.2.0 2017-11-28T12:17:25Z" resourceRoot="" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:description>All of the Deployments test cases are included in this project.
 The clusterName has been removed from all requests and verification steps, due to user story RMINF-77: Modify Deployments Maintenance</con:description>
   <con:settings/>
@@ -5282,7 +5282,8 @@ assert (!json.toString().contains("clusterName"))</script>
       <con:reportParameters/>
       <con:tagId>de6e6c1f-bf25-49bd-96e1-018fe567dd1b</con:tagId>
     </con:testCase>
-    <con:testCase id="e72c148e-7e96-4e06-aca6-5fdbd8a338d5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC###_VerifySortingAndPagingDeploymentsList" searchProperties="true">
+    <con:testCase id="e72c148e-7e96-4e06-aca6-5fdbd8a338d5" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1061_VerifySortingAndPagingDeploymentsList" searchProperties="true">
+      <con:description>T-1061:Deployments sorting with different size of pages</con:description>
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
       <con:testStep type="groovy" name="SetupVariables" id="fff755d0-3a1e-4322-8ec4-605f7f6d977d">
