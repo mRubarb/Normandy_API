@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c5b347f3-77eb-4a0e-8d92-debb27ef69cc" created="2.1.0" activeEnvironment="Default environment" name="Applications Test Cases" updated="2.2.0 2017-11-28T12:17:25Z" resourceRoot="" lastOpened="2017-12-15T07:52:49.509-03:00" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="8a531d3b-b48b-43af-8c14-79815e284899" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications GET" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="Applications" path="/platformservice/api/v1/applications" id="a3f7d079-6007-4e52-93d4-1490353ebe06">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>tenantKey</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>deploymentKey</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>enabled</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>sortBy</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>sortDirection</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>page</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>pageSize</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>Authorization</con:name>
+          <con:value/>
+          <con:style>HEADER</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Applications" id="4704dec3-0e99-49b3-80c3-31235193ae0d" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc2devrmapp44.prod.tangoe.com/applications">app:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc2devrmapp44.prod.tangoe.com/applications">app:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>tenantKey</con:entry>
+            <con:entry>deploymentKey</con:entry>
+            <con:entry>enabled</con:entry>
+            <con:entry>sortBy</con:entry>
+            <con:entry>sortDirection</con:entry>
+            <con:entry>page</con:entry>
+            <con:entry>pageSize</con:entry>
+            <con:entry>Authorization</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="4066dfb0-3771-41fd-a34b-b63107ff89ed" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="Applications" path="/platformservice/api/v1/applications" id="1fb783bf-1c30-4e2c-a4ae-29a2b339d0f7">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>Authorization</con:name>
+          <con:value/>
+          <con:style>HEADER</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Applications" id="73b809cf-94ee-4700-9b57-fa0aed6e9265" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>500 400</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc1testrmapp03.prod.tangoe.com/api/v1/applications">app:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="e01dcb3d-ae84-413b-bc84-1cca7b6d2d7e" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint/>
+          <con:request>{
+  "key": "",
+  "name": "",  
+  "description": "",
+  "enabled": true 
+}</con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>Authorization</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="1f77e75e-af3a-40c3-9462-758e3dc847af" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications/{key} DELETE" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="Key" path="/platformservice/api/v1/applications/{key}" id="64bef996-2979-445f-9474-33d4d8ddc8cb">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>key</con:name>
+          <con:value>key</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>key</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>Authorization</con:name>
+          <con:value/>
+          <con:style>HEADER</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Key" id="e2a32cf5-5cf2-4926-b3c7-d589a965b2c7" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="d3371565-ad2c-4d0f-bd78-8050dbd58321" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint/>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="key" value="" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>key</con:entry>
+            <con:entry>Authorization</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="fe87b7a0-0d12-4df3-8627-4b537023c5b8" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications/{key} GET" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://dc1testrmapp03.prod.tangoe.com:8055</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Key" path="/platformservice/api/v1/applications/{key}" id="aa641ffe-9172-4508-ab9d-7e6028033a0e">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>key</con:name>
+          <con:value>key</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>key</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>Authorization</con:name>
+          <con:value/>
+          <con:style>HEADER</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Key" id="310286c8-c9d8-4633-852b-d18879d7e0cc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/">app:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1">app:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="aa461808-ee1e-4593-acd2-65a0700fb157" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://dc1testrmapp03.prod.tangoe.com:8055</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="key" value="key" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>key</con:entry>
+            <con:entry>Authorization</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="4dba10e4-a630-4d80-b293-e37bbbb34cdb" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications/{key} PUT" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints/>
+    <con:resource name="Key" path="/platformservice/api/v1/applications/{key}" id="409ffb89-6489-4d9a-98aa-a650afec98e2">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>key</con:name>
+          <con:value>key</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>key</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>Authorization</con:name>
+          <con:value/>
+          <con:style>HEADER</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Key" id="d8b52f4e-0437-4ce2-9946-47276035112b" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json;charset=UTF-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:app="http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1">app:Fault</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="0b4999a1-8a44-4477-9beb-c248f63d08d1" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint/>
+          <con:request>{
+  "key": "string",
+  "name": "string"
+  "description": "string",
+  "enabled": true,
+}</con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="key" value="key" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>key</con:entry>
+            <con:entry>Authorization</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="49d75820-f577-426f-bb1f-46d15bb44376" name="TestSuite_Applications">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="442b1543-c635-42be-ba5f-a6a9599dd307" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase_Applications" searchProperties="true" timeout="0" maxResults="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="Setup" id="48e4a1ad-54d8-4ca3-b19c-4a61b64b6b20">
+        <con:settings/>
+        <con:config>
+          <script>// *** ADDED DECEMBER 26 -- TRYING SECURITY TOKEN ***  
+// *** JANUARY 3 -- ADDING READING URL (HOSTNAME) FROM FILE ***
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+
+String projectPath = groovyUtils.projectPath //gets the path of the project root
+String fileNameToken = projectPath + "\\tokenGenerated.txt"
+String fileNameURL = projectPath + "\\platformServiceHostName.txt"
+
+readDataFromFile(fileNameToken, log, testRunner)
+readDataFromFile(fileNameURL, log, testRunner)
+
+// read in each line of token pair file and send to SetupTestSuiteVariables method for creating token pair file.
+static boolean readDataFromFile(fileName, log, testRunner)
+{
+	try
+	{
+		new File(fileName).eachLine 
+		{ 
+			line ->	
+			//log.info line
+			setupTestSuiteVariables(line ,log, testRunner)
+		}
+	}
+	catch (all)
+	{
+		log.info "    File read failed in readDataFromFile method."
+		return false
+	}
+	return true
+}
+
+// put token into test suite property if line contains one of the tokens.
+static void setupTestSuiteVariables(inputLine, log, testRunner)
+{
+	def strArray = []
+	strArray = inputLine.split("=")
+	
+	// log.info strArray[1]
+	
+	if (inputLine.contains("Token"))
+	{  
+		testRunner.testCase.setPropertyValue("Token",strArray[1])
+		log.info "  Token: " + testRunner.testCase.getPropertyValue("Token")		
+	
+	} else if (inputLine.contains("URL"))
+	{
+		testRunner.testCase.setPropertyValue("URL",strArray[1])
+		log.info "  Hostname URL: " + testRunner.testCase.getPropertyValue("URL")	
+	}
+	
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetApplications" id="c4c2fc53-b3e8-44ed-ab33-055a54a90e82">
+        <con:settings/>
+        <con:config service="/applications GET" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetApplications" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc2devrmapp44.prod.tangoe.com/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="eff7eab1-3c26-4f1c-8a57-bd5494903734" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="pageSize" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>tenantKey</con:entry>
+              <con:entry>deploymentKey</con:entry>
+              <con:entry>enabled</con:entry>
+              <con:entry>sortBy</con:entry>
+              <con:entry>sortDirection</con:entry>
+              <con:entry>page</con:entry>
+              <con:entry>pageSize</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>Token</con:name>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
+        </con:property>
+        <con:property>
+          <con:name>URL</con:name>
+          <con:value>http://dc1testrmapp03.prod.tangoe.com:4070</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="7125cdbc-ecb1-4152-bc8d-03baa7ccd647" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC_BasicRequests" searchProperties="true" timeout="0" maxResults="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="Setup" id="568bf0bb-c926-485d-bd9c-706c7019ee30">
+        <con:settings/>
+        <con:config>
+          <script>String appKey = "APP_RVM_2"
+String appName = "Application Rivermine"
+String appDescription = "test"
+
+String appName2 = "Application Rivermine__2"
+String appDescription2 = "test-update"
+
+testRunner.testCase.setPropertyValue("appKey", appKey)
+testRunner.testCase.setPropertyValue("appName", appName)
+testRunner.testCase.setPropertyValue("appDescription", appDescription)
+
+testRunner.testCase.setPropertyValue("appName2", appName2)
+testRunner.testCase.setPropertyValue("appDescription2", appDescription2)
+
+
+testRunner.testCase.setPropertyValue("appKeyPost", "\"" + appKey + "\"")
+testRunner.testCase.setPropertyValue("appNamePost", "\"" + appName + "\"")
+testRunner.testCase.setPropertyValue("appDescriptionPost", "\"" + appDescription + "\"")
+
+testRunner.testCase.setPropertyValue("appNamePost2", "\"" + appName2 + "\"")
+testRunner.testCase.setPropertyValue("appDescriptionPost2", "\"" + appDescription2 + "\"")
+
+
+
+// *** ADDED DECEMBER 26 -- TRYING SECURITY TOKEN ***  
+// *** JANUARY 3 -- ADDING READING URL (HOSTNAME) FROM FILE ***
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+
+String projectPath = groovyUtils.projectPath //gets the path of the project root
+String fileNameToken = projectPath + "\\tokenGenerated.txt"
+String fileNameURL = projectPath + "\\platformServiceHostName.txt"
+
+readDataFromFile(fileNameToken, log, testRunner)
+readDataFromFile(fileNameURL, log, testRunner)
+
+// read in each line of token pair file and send to SetupTestSuiteVariables method for creating token pair file.
+static boolean readDataFromFile(fileName, log, testRunner)
+{
+	try
+	{
+		new File(fileName).eachLine 
+		{ 
+			line ->	
+			//log.info line
+			setupTestSuiteVariables(line ,log, testRunner)
+		}
+	}
+	catch (all)
+	{
+		log.info "    File read failed in readDataFromFile method."
+		return false
+	}
+	return true
+}
+
+// put token into test suite property if line contains one of the tokens.
+static void setupTestSuiteVariables(inputLine, log, testRunner)
+{
+	def strArray = []
+	strArray = inputLine.split("=")
+	
+	// log.info strArray[1]
+	
+	if (inputLine.contains("Token"))
+	{  
+		testRunner.testCase.setPropertyValue("Token",strArray[1])
+		log.info "  Token: " + testRunner.testCase.getPropertyValue("Token")		
+	
+	} else if (inputLine.contains("URL"))
+	{
+		testRunner.testCase.setPropertyValue("URL",strArray[1])
+		log.info "  Hostname URL: " + testRunner.testCase.getPropertyValue("URL")	
+	}
+	
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="NewApplication" id="ecbae76d-df5a-49e4-b9c4-10056c6d7e57">
+        <con:settings/>
+        <con:config service="/applications POST" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="NewApplication" id="e01dcb3d-ae84-413b-bc84-1cca7b6d2d7e" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request>{
+  "key": ${#TestCase#appKeyPost},
+  "name": ${#TestCase#appNamePost},
+  "description": ${#TestCase#appDescriptionPost},
+  "enabled": true 
+}</con:request>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="db2038fd-09e7-40ee-a3a8-dfa938cdc996" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="Authorization" value="Bearer ${#TestCase#Token}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetApplicationByKey" id="ea011d41-8b80-4b89-99d4-e76e98d7c8e0">
+        <con:settings/>
+        <con:config service="/applications/{key} GET" resourcePath="/platformservice/api/v1/applications/{key}" methodName="Key" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetApplicationByKey" id="aa461808-ee1e-4593-acd2-65a0700fb157" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="2a8ddb8b-94c6-4c64-b53f-b66e4e7831d2" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="5140109c-7e1a-413a-9fc2-837024375189" name="Match content of [key]">
+              <con:configuration>
+                <path>$['key']</path>
+                <content>${#TestCase#appKey}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="15ae5662-3946-4a92-b575-707bbd50803e" name="Match content of [name]">
+              <con:configuration>
+                <path>$['name']</path>
+                <content>${#TestCase#appName}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="881112fe-96fa-4367-b5e0-a4e6db514928" name="Match content of [description]">
+              <con:configuration>
+                <path>$['description']</path>
+                <content>${#TestCase#appDescription}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="key" value="${#TestCase#appKey}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>key</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="UpdateApplication" id="2ea9ad80-bafb-48b2-9f32-0f3d02e27622">
+        <con:settings/>
+        <con:config service="/applications/{key} PUT" resourcePath="/platformservice/api/v1/applications/{key}" methodName="Key" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="UpdateApplication" id="0b4999a1-8a44-4477-9beb-c248f63d08d1" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request>{
+  "key": ${#TestCase#appKeyPost},
+  "name": ${#TestCase#appNamePost2},
+  "description": ${#TestCase#appDescriptionPost2},
+  "enabled": false
+}</con:request>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="63efbfc6-6917-42c8-9453-fe7db1809e00" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="key" value="${#TestCase#appKey}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>key</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetApplicationByKey2" id="7cba65ca-7c91-428c-aae1-8feb44108dc3">
+        <con:settings/>
+        <con:config service="/applications/{key} GET" resourcePath="/platformservice/api/v1/applications/{key}" methodName="Key" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetApplicationByKey2" id="aa461808-ee1e-4593-acd2-65a0700fb157" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="2a8ddb8b-94c6-4c64-b53f-b66e4e7831d2" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="5140109c-7e1a-413a-9fc2-837024375189" name="Match content of [key]">
+              <con:configuration>
+                <path>$['key']</path>
+                <content>${#TestCase#appKey}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="15ae5662-3946-4a92-b575-707bbd50803e" name="Match content of [name]">
+              <con:configuration>
+                <path>$['name']</path>
+                <content>${#TestCase#appName2}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="881112fe-96fa-4367-b5e0-a4e6db514928" name="Match content of [description]">
+              <con:configuration>
+                <path>$['description']</path>
+                <content>${#TestCase#appDescription2}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="key" value="${#TestCase#appKey}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>key</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetAllApplications" id="e959bc03-32e1-40f5-8edb-f2e0ebf282a9">
+        <con:settings/>
+        <con:config service="/applications GET" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetAllApplications" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="2acb632c-7b59-4da7-9ea6-300ffea28136" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="pageSize" value="100"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>tenantKey</con:entry>
+              <con:entry>deploymentKey</con:entry>
+              <con:entry>enabled</con:entry>
+              <con:entry>sortBy</con:entry>
+              <con:entry>sortDirection</con:entry>
+              <con:entry>page</con:entry>
+              <con:entry>pageSize</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="VerifyNewAppInApplicationsList" id="0a86f542-5b39-4c15-bcbd-5d84199d3741">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+def testCase = context.testCase; 
+def testStep = testCase.getTestStepByName("GetAllApplications") 
+
+// Get JSON response 
+def response = testStep.testRequest.messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+boolean appListed = false
+String appKeyExpected = testRunner.testCase.getPropertyValue("appKey")
+
+for (int i = 0; i &lt; json.metadata.totalCount; i++) {
+
+	log.info "App key: " + json.applications[i].key
+	
+	if(json.applications[i].key.equals(appKeyExpected)) {
+		appListed = true
+		break;
+	}
+}
+
+assert(appListed == true)</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="DeleteApplication" id="d52bc249-2daa-4590-8dd0-3bd35028623f">
+        <con:settings/>
+        <con:config service="/applications/{key} DELETE" resourcePath="/platformservice/api/v1/applications/{key}" methodName="Key" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="DeleteApplication" id="d3371565-ad2c-4d0f-bd78-8050dbd58321" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/api/v1/applications/APP_RVM_1</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="58026b2a-1832-4a1f-99f4-59752c07c174" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="key" value="${#TestCase#appKey}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>key</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>Token</con:name>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appKey</con:name>
+          <con:value>APP_RVM_2</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appName</con:name>
+          <con:value>Application Rivermine</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appDescription</con:name>
+          <con:value>test</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appName2</con:name>
+          <con:value>Application Rivermine__2</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appDescription2</con:name>
+          <con:value>test-update</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appKeyPost</con:name>
+          <con:value>"APP_RVM_2"</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appNamePost</con:name>
+          <con:value>"Application Rivermine"</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appDescriptionPost</con:name>
+          <con:value>"test"</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appNamePost2</con:name>
+          <con:value>"Application Rivermine__2"</con:value>
+        </con:property>
+        <con:property>
+          <con:name>appDescriptionPost2</con:name>
+          <con:value>"test-update"</con:value>
+        </con:property>
+        <con:property>
+          <con:name>URL</con:name>
+          <con:value>http://dc1testrmapp03.prod.tangoe.com:4070</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>568bf0bb-c926-485d-bd9c-706c7019ee30</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>7cba65ca-7c91-428c-aae1-8feb44108dc3</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:testCase id="33f732d3-61e9-4624-80a1-95c837880f1a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC###_VerifySortingAndPagingApplicationsList" searchProperties="true">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="SetupVariables" id="d948db99-31b5-4862-8bfc-dc3dc7bddf38">
+        <con:settings/>
+        <con:config>
+          <script>// KEY | NAME | IS_ENABLED
+
+
+// *** ADDED DECEMBER 26 -- TRYING SECURITY TOKEN ***  
+// *** JANUARY 3 -- ADDING READING URL (HOSTNAME) FROM FILE ***
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+
+String projectPath = groovyUtils.projectPath //gets the path of the project root
+String fileNameToken = projectPath + "\\tokenGenerated.txt"
+String fileNameURL = projectPath + "\\platformServiceHostName.txt"
+
+readDataFromFile(fileNameToken, log, testRunner)
+readDataFromFile(fileNameURL, log, testRunner)
+
+// read in each line of token pair file and send to SetupTestSuiteVariables method for creating token pair file.
+static boolean readDataFromFile(fileName, log, testRunner)
+{
+	try
+	{
+		new File(fileName).eachLine 
+		{ 
+			line ->	
+			//log.info line
+			setupTestSuiteVariables(line ,log, testRunner)
+		}
+	}
+	catch (all)
+	{
+		log.info "    File read failed in readDataFromFile method."
+		return false
+	}
+	return true
+}
+
+// put token into test suite property if line contains one of the tokens.
+static void setupTestSuiteVariables(inputLine, log, testRunner)
+{
+	def strArray = []
+	strArray = inputLine.split("=")
+	
+	// log.info strArray[1]
+	
+	if (inputLine.contains("Token"))
+	{  
+		testRunner.testCase.setPropertyValue("Token",strArray[1])
+		// log.info "  Token: " + testRunner.testCase.getPropertyValue("Token")		
+	
+	} else if (inputLine.contains("URL"))
+	{
+		testRunner.testCase.setPropertyValue("URL",strArray[1])
+		// log.info "  Hostname URL: " + testRunner.testCase.getPropertyValue("URL")	
+	}
+	
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetApplications" id="efc98ef8-ee06-42be-90b5-c036c9a4d09c">
+        <con:settings/>
+        <con:config service="/applications GET" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetApplications" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/platformservice/api/v1/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5999a7b8-2031-43b0-a645-af9b76ccc05e" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <entry key="Authorization" value="Bearer ${#TestCase#Token}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>tenantKey</con:entry>
+              <con:entry>deploymentKey</con:entry>
+              <con:entry>enabled</con:entry>
+              <con:entry>sortBy</con:entry>
+              <con:entry>sortDirection</con:entry>
+              <con:entry>page</con:entry>
+              <con:entry>pageSize</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GetTotalCountApplications" id="4cf5039c-d30a-451e-9ca0-a1f5f3c5d80a">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+def testCase = context.testCase; 
+def testStep = testCase.getTestStepByName("GetApplications") 
+
+// Get JSON response 
+def response = testStep.testRequest.messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+testRunner.testCase.setPropertyValue("totalCountApplications", Integer.toString(json.metadata.totalCount))
+
+log.info "  Total Count APPLICATIONS: " + testRunner.testCase.getPropertyValue("totalCountApplications")</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource_PageSize" id="f92da18c-f3a1-415c-b4a6-26d9d330e373">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">10&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">20&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">50&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>pageSize</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="CalculateNumberOfPages" id="498e5f68-5428-41a7-a0d8-cee18a39dc42">
+        <con:settings/>
+        <con:config>
+          <script>def testCase = context.testCase; 
+
+def dataSource = testCase.getTestStepByName("DataSource_PageSize") 
+
+int totalCountApplications = Integer.parseInt(testRunner.testCase.getPropertyValue("totalCountApplications"))
+
+int pageSize = Integer.parseInt(dataSource.getPropertyValue("pageSize"))
+
+int pagesAmount = totalCountApplications / pageSize
+
+if (totalCountApplications % pageSize > 0) 
+	pagesAmount = totalCountApplications / pageSize + 1
+
+
+testRunner.testCase.setPropertyValue("pagesAmount", Integer.toString(pagesAmount))
+testRunner.testCase.setPropertyValue("currentPageNumber", "0")
+
+//log.info "  Total Count Applications: " + totalCountApplications
+log.info "  Page Size: " + pageSize
+log.info "  Pages Amount: " + pagesAmount</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="GetCurrentPageNumber" id="0604ee75-aabd-4eae-84d4-6e319583bdb4">
+        <con:settings/>
+        <con:config>
+          <script>int currentPageNumber = Integer.parseInt(testRunner.testCase.getPropertyValue("currentPageNumber")) + 1
+
+testRunner.testCase.setPropertyValue("currentPageNumber", Integer.toString(currentPageNumber))
+
+log.info "  Current Page Number: " + currentPageNumber</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="DataSource_SortCriteria" id="9ebbd764-c11b-45ac-98d0-06328f1b5c3c">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">ASC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">KEY</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">NAME</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+              <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">IS_ENABLED</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">DESC</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>false</con:shared>
+          <con:restartShared>false</con:restartShared>
+          <con:property>sortBy</con:property>
+          <con:property>sortDirection</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetAllApplicationsSorted" id="263e0be3-5a5e-4396-9315-d11e33bcc7eb">
+        <con:settings/>
+        <con:config service="/applications GET" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetAllApplicationsSorted" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/platformservice/api/v1/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a63c8623-d8ee-49ae-bdd2-4d72003eebca" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
+              <con:entry key="pageSize" value="${#TestCase#totalCountApplications}"/>
+              <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
+              <con:entry key="page" value="1"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>tenantKey</con:entry>
+              <con:entry>deploymentKey</con:entry>
+              <con:entry>enabled</con:entry>
+              <con:entry>sortBy</con:entry>
+              <con:entry>sortDirection</con:entry>
+              <con:entry>page</con:entry>
+              <con:entry>pageSize</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="PutAllApplicationsIntoList" id="6e963f01-6718-4758-950b-211db6197890">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+def testCase = context.testCase; 
+def testStep = testCase.getTestStepByName("GetAllApplicationsSorted") 
+
+// Get JSON response 
+def response = testStep.testRequest.messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+
+context.listApplicationsObject = []
+
+for(int i = 0; i &lt; json.applications.size(); i++) {
+
+	def key = json.applications[i].key
+	def name = json.applications[i].name
+	def enabled = json.applications[i].enabled
+
+	context.listApplicationsObject.add(new ApplicationObject(key, name, enabled))	
+	// log.info " Application # " + (i+1)
+	// context.listApplicationsObject.get(i).showApplication(log)
+
+}
+
+public class ApplicationObject {
+	
+	def key = ""
+	def name = ""
+	def enabled = ""
+	
+	public ApplicationObject(def key, def name, def enabled) {
+		
+		this.key = key.trim()
+		this.name = name.trim()
+		this.enabled = enabled
+		
+	}
+
+	public showApplication(log) {
+		
+		log.info "Application Key: " + key
+		log.info "Application Name: " + name
+		log.info "Enabled: " + enabled
+		
+	}
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="SortApplications" id="a07a00c8-e577-4671-b5e8-6661cee39e20">
+        <con:settings/>
+        <con:config service="/applications GET" resourcePath="/platformservice/api/v1/applications" methodName="Applications" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="SortApplications" id="a4ca4ca1-e3c5-4bfc-98aa-6f45c9f1adb6" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>${#TestCase#URL}</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://dc1testrmapp03.prod.tangoe.com/platformservice/api/v1/applications</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="dff2146d-0717-4523-9f21-45f36f6e096c" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
+            <con:parameters>
+              <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
+              <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
+              <con:entry key="pageSize" value="${DataSource_PageSize#pageSize}"/>
+              <con:entry key="sortBy" value="${DataSource_SortCriteria#sortBy}"/>
+              <con:entry key="page" value="${#TestCase#currentPageNumber}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>tenantKey</con:entry>
+              <con:entry>deploymentKey</con:entry>
+              <con:entry>enabled</con:entry>
+              <con:entry>sortBy</con:entry>
+              <con:entry>sortDirection</con:entry>
+              <con:entry>page</con:entry>
+              <con:entry>pageSize</con:entry>
+              <con:entry>Authorization</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="VerifyApplicationsSorted" id="b8b51920-7b64-4063-a574-8f707c8937ca">
+        <con:settings/>
+        <con:config>
+          <script>import groovy.json.JsonSlurper 
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils( context ); 
+def testCase = context.testCase; 
+def testStep = testCase.getTestStepByName("SortApplications") 
+def dataSourceSortBy = testCase.getTestStepByName("DataSource_SortCriteria") 
+def dataSourcePage = testCase.getTestStepByName("DataSource_PageSize") 
+
+// Get JSON response 
+def response = testStep.testRequest.messageExchange.response.responseContent
+def slurper = new JsonSlurper()
+def json = slurper.parseText response
+
+def sortDirection = dataSourceSortBy.getPropertyValue("sortDirection")
+def sortBy = dataSourceSortBy.getPropertyValue("sortBy")
+int pageSize = Integer.parseInt(dataSourcePage.getPropertyValue("pageSize"))
+int page = Integer.parseInt(testCase.getPropertyValue("currentPageNumber"))
+
+// Calculate indexes to get applications from general list (list that contains all the applications)
+// Example: page = 2, pageSize = 5
+// indexStart = (2-1) * 5 = 5
+// indexEnd = 5 + 5 = 10 
+
+int indexStart = (page - 1) * pageSize
+int indexEnd = indexStart + pageSize - 1
+int totalCount = Integer.parseInt(testRunner.testCase.getPropertyValue("totalCountApplications"))
+
+if (indexEnd >  totalCount) indexEnd = totalCount - 1
+
+//log.info "indexStart: " + indexStart
+//log.info "indexEnd: " + indexEnd
+log.info "  Sort By " + sortBy + " in " + sortDirection + " order"
+
+int index = 0
+
+for (int i = indexStart; i &lt;= indexEnd; i++) {
+
+	if (sortBy == "KEY"){
+
+		assert(json.applications[index].key.equals(context.listApplicationsObject.get(i).key))	
+		//log.info  "  " + json.applications[index].key + " equals " + context.listApplicationsObject.get(i).key
+		/*
+		try {
+			
+			assert(json.applications[index].key.equals(context.listApplicationsObject.get(i).key))	
+		
+		} catch (AssertionError e) {
+		
+			log.info "  Applications didn't match on page " + page
+			log.info "  Application key expected: " + context.listApplicationsObject.get(i).key
+			log.info "  Application key actual  : " + json.applications[index].key
+		
+		}
+		*/
+	
+	} else if (sortBy == "NAME"){
+
+		String expected = context.listApplicationsObject.get(i).name.trim()
+		String actual = json.applications[index].name.trim()
+			
+		assert(actual.equals(expected))
+		//log.info  "  " + actual + " equals " + expected
+		
+		/*try {
+		
+			assert(actual.equals(expected))
+		
+		} catch (AssertionError e) {
+		
+			log.info "  Applications didn't match on page " + page
+			log.info "  Application name expected: " + context.listApplicationsObject.get(i).applicationName
+			log.info "  Application name actual  : " + json.applications[index].application.name
+		
+		}*/
+				
+	} else if (sortBy == "IS_ENABLED"){
+
+		assert(json.applications[index].enabled.equals(context.listApplicationsObject.get(i).enabled))	
+		//log.info  "  " + json.applications[index].key + " equals " + context.listApplicationsObject.get(i).key
+		
+		/*try {
+		
+			assert(json.applications[index].enabled.equals(context.listApplicationsObject.get(i).enabled))	
+		
+		} catch (AssertionError e) {
+		
+			log.info "  Applications didn't match on page " + page
+			log.info "  Enabled value expected: " + context.listApplicationsObject.get(i).enabled
+			log.info "  Enabled value actual  : " + json.applications[index].enabled
+		
+		}*/
+		
+	} 
+		
+	index++
+}</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop Sort_Criteria" id="a62589b7-fdd5-4f99-bb29-d60abf1749e9">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource_SortCriteria</dataSourceStep>
+          <targetStep>GetAllApplicationsSorted</targetStep>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="goto" name="TotalPages = CalculatedAmountPages" id="7ca9c022-b7e6-4ae8-9226-ca866fdcd09a">
+        <con:settings/>
+        <con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:condition>
+            <con:name>All pages verified?</con:name>
+            <con:type>XPATH</con:type>
+            <con:expression>declare namespace ns1='http://dc1testrmapp03.prod.tangoe.com/platformservice/api/v1/applications';
+//ns1:Response[1]/ns1:metadata[1]/ns1:totalPages[1]>${#TestCase#currentPageNumber}</con:expression>
+            <con:targetStep>GetCurrentPageNumber</con:targetStep>
+          </con:condition>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop PageSize" id="75019c4f-99e3-4c04-8287-a7d95268cfc7">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>DataSource_PageSize</dataSourceStep>
+          <targetStep>CalculateNumberOfPages</targetStep>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>Token</con:name>
+          <con:value>eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTUyMDE2MTI0NH0.wZrk9y089A4Ke79sx5hF2rYqqIzVrc6yqm0t0eMBOH78nOgE0_TuEXwf-p4jywRdAY0XC7YIr3h9MiSdZKgTKQ</con:value>
+        </con:property>
+        <con:property>
+          <con:name>URL</con:name>
+          <con:value>http://dc1testrmapp03.prod.tangoe.com:4070</con:value>
+        </con:property>
+        <con:property>
+          <con:name>totalCountRoutes</con:name>
+          <con:value>23</con:value>
+        </con:property>
+        <con:property>
+          <con:name>pagesAmount</con:name>
+          <con:value>1</con:value>
+        </con:property>
+        <con:property>
+          <con:name>currentPageNumber</con:name>
+          <con:value>1</con:value>
+        </con:property>
+        <con:property>
+          <con:name>totalCountApplications</con:name>
+          <con:value>27</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>aff781f7-7321-4c9a-9752-e78db3951056</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>907bf514-f8b0-4c5a-a6d9-b084237beb6f</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>d4cfbd19-4f36-45be-9783-a181d99feb59</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>3cd86a98-4d38-4002-ae77-46c19fb3130d</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>58e5c11e-1945-4ceb-8850-5c0681183af9</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>d3d8f3ba-1ac2-4e46-baa4-72764d43beff</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>c66b2770-ce5c-46e6-a729-a4e5a00e7481</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>680f8f71-e506-41d3-8a79-24a0c668a2eb</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>8ca6c1e7-a5d9-42bb-8040-35b349bf313b</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>62f3ed11-df53-4426-9391-b4bffa3155e8</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f40512a3-0e30-494d-9a2b-6743ad7ab437</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>4b1bfef8-e6c6-43ad-ac68-cbaaec11f990</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>38a73054-b71b-469a-ad50-afb78adf71e4</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>4323f9b6-f359-4f53-a24b-ed13a63b7465</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f92da18c-f3a1-415c-b4a6-26d9d330e373</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>9ebbd764-c11b-45ac-98d0-06328f1b5c3c</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>a62589b7-fdd5-4f99-bb29-d60abf1749e9</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

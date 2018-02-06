@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="73af64d9-0994-43cb-98f5-d8c4701d6bc4" created="2.1.0" activeEnvironment="Default" name="Routes Test Cases" updated="2.2.0 20171026-0943" lastOpened="2017-12-15T07:51:45.375-03:00" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="73af64d9-0994-43cb-98f5-d8c4701d6bc4" created="2.1.0" activeEnvironment="Default environment" name="Routes Test Cases" updated="2.2.0 2017-11-28T12:17:25Z" lastOpened="2017-12-15T07:51:45.375-03:00" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="a5439a2e-758c-40e8-b31e-d6bea53b26ee" wadlVersion="http://wadl.dev.java.net/2009/02" name="/applications POST" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -161,6 +161,18 @@
           <con:status>400 404</con:status>
           <con:params/>
           <con:element xmlns:app="http://dc2devrmapp44.prod.tangoe.com/v1/applications/APP_ANA_R1">app:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -466,6 +478,18 @@
         <con:representation type="REQUEST">
           <con:mediaType>application/json</con:mediaType>
           <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -1877,6 +1901,18 @@
           <con:params/>
           <con:element>data</con:element>
         </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
         <con:request name="Request 1" id="72f3acdb-fd02-4e4d-b32b-8f1e4b5de7f9" mediaType="application/json" postQueryString="false">
           <con:settings>
             <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -1949,6 +1985,18 @@
           <con:status>404 400</con:status>
           <con:params/>
           <con:element xmlns:bad="http://dc2devrmapp44.prod.tangoe.com/v1/tenants/ANAT1/applications/BAD_APP">bad:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -2265,6 +2313,18 @@
           <con:status>404 400</con:status>
           <con:params/>
           <con:element xmlns:dep="http://dc2devrmapp44.prod.tangoe.com/v1/tenants/ANAT1/deployments/DEP_NOT_VALID">dep:Fault</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
         </con:representation>
         <con:representation type="RESPONSE">
           <con:mediaType xsi:nil="true"/>
@@ -7056,7 +7116,7 @@ testRunner.testCase.setPropertyValue("tenantKey", key)</script>
       </con:properties>
       <con:reportParameters/>
     </con:testCase>
-    <con:testCase id="eeb1f810-33ae-45de-aa9d-8420ea738895" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1017_VerifySortingAndPaging" searchProperties="true">
+    <con:testCase id="eeb1f810-33ae-45de-aa9d-8420ea738895" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TC1017_VerifySortingAndPagingRoutesList" searchProperties="true">
       <con:settings/>
       <con:savedRecentRuns>1</con:savedRecentRuns>
       <con:testStep type="groovy" name="SetupVariables" id="907bf514-f8b0-4c5a-a6d9-b084237beb6f">
@@ -7178,7 +7238,7 @@ def json = slurper.parseText response
 
 testRunner.testCase.setPropertyValue("totalCountRoutes", Integer.toString(json.metadata.totalCount))
 
-log.info "  Total Count Routes: " + testRunner.testCase.getPropertyValue("totalCountRoutes")</script>
+log.info "  Total Count ROUTES: " + testRunner.testCase.getPropertyValue("totalCountRoutes")</script>
         </con:config>
       </con:testStep>
       <con:testStep type="datasource" name="DataSource_PageSize" id="58e5c11e-1945-4ceb-8850-5c0681183af9">
@@ -7423,6 +7483,7 @@ public class RouteObject {
               <con:authType>No Authorization</con:authType>
             </con:credentials>
             <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:jmsPropertyConfig/>
             <con:parameters>
               <con:entry key="Authorization" value="Bearer ${#TestCase#Token}"/>
               <con:entry key="sortDirection" value="${DataSource_SortCriteria#sortDirection}"/>
@@ -7494,6 +7555,8 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 	if (sortBy == "KEY"){
 
 		assert(json.routes[index].key.equals(context.listRoutesObject.get(i).key))	
+		// log.info  "  " + json.routes[index].key + " equals " + context.listRoutesObject.get(i).key
+		
 		/*
 		try {
 			
@@ -7513,6 +7576,7 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].tenant.key.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
 		
 		/*try {
 
@@ -7532,6 +7596,7 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].tenant.name.trim()
 
 		assert(actual.equals(expected))	
+		// log.info  "  " + actual + " equals " + expected
 			
 		/* try {
 			assert(actual.equals(expected))			
@@ -7550,6 +7615,8 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].deployment.key.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
+		
 		/*			
 		try {
 			assert(actual.equals(expected))
@@ -7568,6 +7635,8 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].deployment.version.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
+		
 		/*	
 		try {
 		
@@ -7587,6 +7656,8 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].application.key.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
+		
 		/*
 		try {
 
@@ -7606,6 +7677,7 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].application.name.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
 
 		/*try {
 		
@@ -7625,6 +7697,7 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 		String actual = json.routes[index].qualifier.trim()
 			
 		assert(actual.equals(expected))
+		// log.info  "  " + actual + " equals " + expected
 			
 		/*try {
 		 
@@ -7641,6 +7714,7 @@ for (int i = indexStart; i &lt;= indexEnd; i++) {
 	} else if (sortBy == "IS_ENABLED"){
 
 		assert(json.routes[index].enabled.equals(context.listRoutesObject.get(i).enabled))	
+		// log.info  "  " + json.routes[index].enabled + " equals " + context.listRoutesObject.get(i).enabled
 		
 		/*try {
 		
